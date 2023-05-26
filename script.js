@@ -1,8 +1,8 @@
-// Заранее заданные значения логина и пароля
+// Account, !temporary!
 const correctUsername = "admin";
 const correctPassword = "password123";
 
-// Функция для проверки логина и пароля
+// Functions for validating login
 function checkLogin(username, password) {
   if (username === correctUsername && password === correctPassword) {
     console.log("Login successful!");
@@ -13,7 +13,7 @@ function checkLogin(username, password) {
   }
 }
 
-// Функция для обработки события нажатия кнопки Login
+// Function for validation a button press
 function validateLogin() {
   const enteredUsername = document.getElementById("username").value;
   const enteredPassword = document.getElementById("password").value;
@@ -21,8 +21,8 @@ function validateLogin() {
   checkLogin(enteredUsername, enteredPassword);
 }
 
+// Function to register a user
 function register() {
-  // Ваш код для обробки натискання кнопки реєстрації тут
   console.log("Register button clicked!");
   alert("Register button clicked!");
 }
