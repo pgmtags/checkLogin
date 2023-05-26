@@ -20,3 +20,9 @@ function validateLogin() {
 
   checkLogin(enteredUsername, enteredPassword);
 }
+
+function register() {
+  // Ваш код для обробки натискання кнопки реєстрації тут
+  console.log("Register button clicked!");
+  alert("Register button clicked!");
+}
