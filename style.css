@@ -8,7 +8,7 @@ body {
 }
 
 form {
-  width: 25%; /* Уменьшенная ширина формы на 25% */
+  width: 25%;
   padding: 20px;
   background-color: #fff;
   border: 1px solid #ccc;
