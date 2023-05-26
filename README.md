@@ -1,2 +1,3 @@
-# checkLogin
-using JS for check login
+# Basic authorisation
+#### with style :)
+
