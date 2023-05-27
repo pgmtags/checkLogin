@@ -1,3 +1,3 @@
-# Basic authorisation
-#### with style :)
+## Basic authorisation pattern
+#### <b>with style :)</b>
 
