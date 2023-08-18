@@ -1,49 +1,99 @@
 body {
+  margin: 0;
+  padding: 0;
   font-family: Arial, sans-serif;
-  background-color: #f2f2f2;
+  background-color: #ffe9e9;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  user-select: none;
 }
 
 form {
-  width: 25%;
-  padding: 20px;
-  background-color: #fff;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+  height: 20%;
+  width: 10%;
+  padding: 5%;
+  background-color: #f9c4d256;
+  border: 2px solid #b18597;
+  border-radius: 25px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 
 label {
   display: block;
-  margin-bottom: 10px;
-  font-weight: bold;
+  margin-bottom: 7%;
+  color: #382b22b9;
 }
 
 input[type="text"],
 input[type="password"] {
   width: 100%;
-  padding: 10px;
-  margin-bottom: 20px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+  padding: 5%;
+  border: 2px solid #b18597;
+  border-radius: 25px;
 }
 
-input[type="button"] {
+button.Login {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #382b22b9;
+  padding: 5% 25%;
+  background: #fff0f0;
+  border: 2px solid #b18597;
+  border-radius: 25px;
+  transform-style: preserve-3d;
+  transition: transform 150ms cubic-bezier(0, 0, 0.58, 1), background 150ms cubic-bezier(0, 0, 0.58, 1);
+}
+
+button.Login::before {
+  content: '';
+  position: absolute;
   width: 100%;
-  padding: 10px;
-  background-color: #4caf50;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: #f9c4d2;
+  border-radius: inherit;
+  box-shadow: 0 0 0 2px #b18597, 0 0.625em 0 0 #ffe3e2;
+  transform: translate3d(0, 0.75em, -1em);
+  transition: transform 150ms cubic-bezier(0, 0, 0.58, 1), box-shadow 150ms cubic-bezier(0, 0, 0.58, 1);
 }
 
-input[type="button"]:hover {
-  background-color: #45a049;
+button.Login:hover {
+  background: #ffe9e9;
+  transform: translate(0, 0.25em);
+}
+
+button.Login:hover::before {
+  box-shadow: 0 0 0 2px #b18597, 0 0.5em 0 0 #ffe3e2;
+  transform: translate3d(0, 0.5em, -1em);
+}
+
+button.Login:active {
+  background: #ffe9e9;
+  transform: translate(0em, 0.75em);
+}
+
+button.Login:active::before {
+  box-shadow: 0 0 0 2px #b18597, 0 0 #ffe3e2;
+  transform: translate3d(0, 0, -1em);
+}
+
+footer {
+  text-align: left;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+footer p {
+  margin: 0;
+  font-size: 14px;
+  color: #382b2249;
 }

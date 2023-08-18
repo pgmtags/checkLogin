@@ -6,10 +6,8 @@ const correctPassword = "password123";
 function checkLogin(username, password) {
   if (username === correctUsername && password === correctPassword) {
     console.log("Login successful!");
-    alert("Login successful!");
   } else {
     console.log("Error login.");
-    alert("Error login.");
   }
 }
 
@@ -21,8 +19,10 @@ function validateLogin() {
   checkLogin(enteredUsername, enteredPassword);
 }
 
+/*
 // Function to register a user
 function register() {
   console.log("Register button clicked!");
   alert("Register button clicked!");
 }
+*/
